@@ -1,0 +1,12 @@
+function sortedSquaredArray(array) {
+	
+  // Write your code here.
+	
+	array.sort((a, b)=> a - b)
+	secondArray = []
+	for(let i =0; i < array.length; i++) {
+		 values = array[i]
+		secondArray.push( values * values)
+	}
+	return secondArray = secondArray.sort((a, b)=> a - b)
+}
