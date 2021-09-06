@@ -1,0 +1,22 @@
+let arr = [0,1,0,1,0,0,1]
+
+function miniMoves(arr){
+
+  let zeroCount = 0 // 4
+  let frontSwaps = 0 // 7
+
+  for(let i = 0; i < arr.length; i++){
+    if (arr[i] === 0){
+      zeroCount++
+    } else {
+      frontSwaps += zeroCount
+    }
+  }
+
+  let oneCount = arr.length - zeroCount // 3
+  let backSwaps = zeroCount * oneCount - frontSwaps // 5
+
+  return Math.min(frontSwaps, backSwaps) // 5
+}
+
+miniMoves(arr)
