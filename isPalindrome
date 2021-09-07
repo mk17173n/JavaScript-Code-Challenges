@@ -1,0 +1,13 @@
+function isPalindrome(string) {
+  // Write your code here.
+	function reverseString(string) {
+    return string.split("").reverse().join("");
+}
+	
+	if (string === reverseString(string)){
+  return true
+	
+	} else {
+		return false
+	}
+}
