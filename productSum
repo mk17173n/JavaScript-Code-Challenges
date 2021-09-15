@@ -7,5 +7,5 @@ for (let element of array){
 		sum += element;
 	}
 }
-	return sum * multiplier;
+	return sum * multizplier;
 }
