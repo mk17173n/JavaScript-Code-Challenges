@@ -1,0 +1,57 @@
+/*                          Reduce Method (Part 1)
+
+  The reduce method is a method that iterates or loops through an array and perform an action on each item of the array based on the callback functon you  put as its argument. The reduce function can take up to four arguments.  The second argument is not required.  It is an initial value that you start off with.  We will call this second argument accumulator.  
+  
+  
+  array.reduce(callbackfunction, accumulator)
+
+  */
+
+  /*                      First Example                        */
+
+const numbers = [1, 2, 3, 4]
+
+const sum  = numbers.reduce((accumulator, currentValue) => {
+ return accumulator +  currentValue
+}, 0)
+
+/* Accumulator = 0, currentValue = 1 accumulator becomes 1 because callback function adds 0 + 1. Accumlator is now 1.
+
+Accumulator = 1, currentValue = 2 accumulator becomes 1 + 2 due to call back function. Accumlator is now 3.
+
+Accumulator = 3, currentValue = 3  accumulator becomes 3 + 3 due to call back function. Accumlator is now  6.
+
+Accumulator = 6, currentValue = 4  accumulator becomes 6 + 4 due to call back function. Accumlator is now 10.
+
+No more items in array so the sum becomes 10
+
+*/
+
+console.log(sum)
+
+/* Second Version with no second argument */
+
+/* The second argument aka accumulator = 0 is not necessary.  If no second argument is given then the accumulator starts with the first value in array. */
+
+const numberstwo = [1, 2, 3, 4]
+
+const sumtwo  = numbers.reduce((accumulator, currentValue) => {
+ return accumulator + currentValue
+})
+
+/* Accumulator = 1  currentValue = 2  accumulator becomes 3 because callback function adds 2+ 1. Accumlator is now 3.
+
+Accumulator = 3, currentValue = 3 accumulator becomes 6 due to call back function. Accumlator is now 6.
+
+Accumulator = 6, currentValue = 4  accumulator becomes 6 + 4 due to call back function. Accumlator becomes 10.
+
+No more items in array so the sum becomes 10
+
+*/
+
+/* Third Version Single Line */
+
+
+const sumthree  = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+
+/* This version gets rid of the brackers and return statement since the code in the brackets is a single line code.  In a single line return statement you do not need the brackers or the keyword return. */
