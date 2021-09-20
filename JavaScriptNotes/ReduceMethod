@@ -15,13 +15,13 @@ const sum  = numbers.reduce((accumulator, currentValue) => {
  return accumulator +  currentValue
 }, 0)
 
-/* Accumulator = 0, currentValue = 1 accumulator becomes 1 because callback function adds 0 + 1. Accumlator is now 1.
+/* Accumulator = 0, currentValue = 1 accumulator becomes 1 because callback function adds 0 + 1. Accumulator is now 1.
 
-Accumulator = 1, currentValue = 2 accumulator becomes 1 + 2 due to call back function. Accumlator is now 3.
+Accumulator = 1, currentValue = 2 accumulator becomes 1 + 2 due to call back function. Accumulator is now 3.
 
-Accumulator = 3, currentValue = 3  accumulator becomes 3 + 3 due to call back function. Accumlator is now  6.
+Accumulator = 3, currentValue = 3  accumulator becomes 3 + 3 due to call back function. Accumulator is now  6.
 
-Accumulator = 6, currentValue = 4  accumulator becomes 6 + 4 due to call back function. Accumlator is now 10.
+Accumulator = 6, currentValue = 4  accumulator becomes 6 + 4 due to call back function. Accumulator is now 10.
 
 No more items in array so the sum becomes 10
 
@@ -39,11 +39,11 @@ const sumtwo  = numbers.reduce((accumulator, currentValue) => {
  return accumulator + currentValue
 })
 
-/* Accumulator = 1  currentValue = 2  accumulator becomes 3 because callback function adds 2+ 1. Accumlator is now 3.
+/* Accumulator = 1  currentValue = 2  accumulator becomes 3 because callback function adds 2+ 1. Accumulator is now 3.
 
-Accumulator = 3, currentValue = 3 accumulator becomes 6 due to call back function. Accumlator is now 6.
+Accumulator = 3, currentValue = 3 accumulator becomes 6 due to call back function. Accumulator is now 6.
 
-Accumulator = 6, currentValue = 4  accumulator becomes 6 + 4 due to call back function. Accumlator becomes 10.
+Accumulator = 6, currentValue = 4  accumulator becomes 6 + 4 due to call back function. Accumulator becomes 10.
 
 No more items in array so the sum becomes 10
 
