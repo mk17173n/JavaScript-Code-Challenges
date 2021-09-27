@@ -1,0 +1,13 @@
+function caesarCipherEncryptor(string, key) {
+	let alpha = "abcdefghijklmnopqrstuvwxyz"
+	let output = ""
+   for (let char of string){
+		 const idx = alpha.indexOf(char)
+		 const newidx = (idx + key) % 26
+		 output += alpha[newidx]
+	 }
+	
+	return output
+
+	
+}
