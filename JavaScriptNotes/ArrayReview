@@ -1,0 +1,58 @@
+/*     ARRAY REVIEW
+
+Different Ways to Create Arrays
+
+Array literals
+The  ...spread operator on an iterable object
+The Array() constructor
+The Array.of() and Array.from() factor methods
+
+ */
+
+
+//             ARRAY LITERALS
+
+let empty = {}
+
+let primes = [2, 3, 5 ,7 ,11]
+
+let misc = [1.1, true, "a", ]
+
+let a = [1, 2, 3]
+
+// THE SPREAD OPERATOR
+
+let b = [1, 2, 3]
+
+let c = [0, ...a, 4]
+
+//Spread operator is a conventient way to creare a shallow copy of an Array
+
+
+let original = [1, 2, 3]
+
+let copy = [...original]
+
+copy[0] = 0 //Modifying the copy does not change the original
+
+original[0] // ==> 1
+
+//Spread Operator creates array elements from strings.  Strings are iterable ojects  similar to arrays.
+
+let digits = [..."0123456789ABCDEF"]
+
+console.log(digits)
+
+/* The ARRAY() CONSTRUCTOR.  
+
+The array constructor uses a new keyword and used the class word for array which is Array() */
+
+let array  = new Array() //creates an empty array similar to let array = []
+
+let array1 = new Array(10) //create array with a single numerica argument, which specifies the length.  No elements in array and reading elements using index values doesn't work.
+
+console.log(array1[0])// returned undefined as no elements in array 
+
+let array2 = new Array(5, 4, 3, 2, 1) // Creates an array by using the multiple arguments as elements in the array.
+
+console.log(array2) // all the arguments are elements of the array.
